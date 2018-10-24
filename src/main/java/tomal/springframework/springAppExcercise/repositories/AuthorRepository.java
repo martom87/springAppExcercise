@@ -1,4 +1,7 @@
 package tomal.springframework.springAppExcercise.repositories;
 
-public class AuthorRepository {
+import org.springframework.data.repository.CrudRepository;
+import tomal.springframework.springAppExcercise.model.Author;
+
+public interface AuthorRepository extends CrudRepository<Author, Long> {
 }
